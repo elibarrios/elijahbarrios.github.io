@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elijah Barrios</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <section class="section is-small m-0 p-0">
       <div class="container">
         <div class="column is-9 is-offset-1">
           <nav class="navbar is-transparent">
-            <div class="navbar-menu">
+            <div class="navbar-brand">
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
               <div class="navbar-end">
                 <a href="/" class="navbar-item ">
                   About
@@ -41,7 +49,7 @@
               <div class="column">
                 <div class="content is-medium">
                   <p>
-                    <strong>Elijah Barrios</strong> is an oboist who is currently studying with Dr. Eric Ohlsson at Florida State University, pursuing his Bachelor's in Music Performance while also working on his degree in Computer Science. Since arriving at FSU, Elijah has been a member of the FSU Wind Orchestra, the top graduate wind band.
+                    <strong>Elijah Barrios</strong> is an oboist who is currently studying with Dr. Eric Ohlsson at Florida State University, pursuing his Bachelor's in Music Performance while also working on his degree in Computer Science. Since coming to FSU, Elijah has been a member of the FSU Wind Orchestra, the top graduate wind band.
                   </p>
                   <p>
                     Throughout high school, Elijah was a consistent Florida All State participant. During his junior year, he participated in the MusicForAll Honor Band of America. Outside of school and band programs, he played English Horn and Principal Oboe with the Florida Symphony Youth Orchestra.
@@ -59,5 +67,18 @@
         </div>
       </div>
     </section>
+
+    <script>
+      $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+        });
+      });
+    </script>
   </body>
 </html>
