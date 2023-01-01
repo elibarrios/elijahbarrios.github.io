@@ -8,10 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <section class="section is-small m-0 p-0">
+    <section class="section is-small m-0 p-0 has-background-white-ter">
       <div class="container">
         <div class="column is-9 is-offset-1">
-          <nav class="navbar is-transparent">
+          <nav class="navbar is-transparent has-background-white-ter">
             <div class="navbar-brand">
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
@@ -19,20 +19,66 @@
                 <span aria-hidden="true"></span>
               </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu" id="navMenu">
               <div class="navbar-end">
-                <a href="/" class="navbar-item ">
+                <a href="/index.html" class="navbar-item is-size-5">
                   About
                 </a>
-                <p href="/projects.html" class="navbar-item has-text-weight-bold">
+                <p class="navbar-item has-text-weight-bold is-size-5">
                   Projects
                 </p>
-                <a href="/oboe.html" class="navbar-item">
+                <a href="/oboe.html" class="navbar-item is-size-5">
                   Oboe
                 </a>
               </div>
             </div>
           </nav>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 pt-5">
+        <div class="columns">
+          <div class="column is-three-fifths">
+            <figure class="img">
+              <a href="https://github.com/elijahbarrios/dota-stats-mern" target="_blank">
+                <img class="hoverable" src="media/dpc-stats.png" />
+              </a>
+            </figure>
+          </div>
+          <div class="column">
+            <a href="https://github.com/elijahbarrios/dota-stats-mern" target="_blank">
+              <div class="card">
+                <div class="card-content">
+                  <p class="title">dota-stats-mern</p>
+                  <p>
+                    Displays statistics of teams, players, and drafts for each individual Dota Pro Circuit league and qualifier. Created with Node, React, MongoDB, and Express.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-three-fifths">
+            <figure class="img">
+              <a href="https://gitlab.com/elibarrios/hackernews" target="_blank">
+                <img class="hoverable" src="media/hackernews.png" />
+              </a>
+            </figure>
+          </div>
+          <div class="column">
+            <a href="https://gitlab.com/elibarrios/hackernews" target="_blank">
+              <div class="card">
+                <div class="card-content">
+                  <p class="title">Hackernews Website</p>
+                  <p>
+                    Hackernews feed with Auth0 user login functionality to allow users to view liked and disliked articles. Admin viewing tab to see individual user likes that are stored in a MySQL database. Runs on a private Ubuntu server configured with nginx and Gunicorn, interacting with a Flask and Python backend.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
