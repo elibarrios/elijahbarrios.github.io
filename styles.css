@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Inter:wght@100;300&display=swap');
+
+.content,.tile {
+    font-family: 'Frank Ruhl Libre', serif;
+    animation: 1s ease 0s 1 fadeIn;
+}
+
+.img {
+    animation: 1s ease 0s 1 fadeIn;
+}
+
+.nav {
+    animation: 1s ease 0s 1 fallDown;
+}
+
+.buttons a {
+    opacity: 70%;
+    font-family: 'Inter', sans-serif;
+}
+
+.buttons a:hover {
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+    opacity: 100%;
+}
+
+.tile.is-child {
+    transition: all .2s ease-in-out;
+}
+
+.tile.is-child:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fallDown {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
