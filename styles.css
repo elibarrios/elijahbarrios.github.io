@@ -49,3 +49,9 @@
       opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .buttons a {
+        font-size: 12px;
+    }
+}
