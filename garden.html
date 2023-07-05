@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
     <section class="section is-small m-2 p-2">
@@ -47,66 +49,64 @@
     </section>
     <section class="section">
       <div class="container">
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-8">
-            <div class="tile">
-              <div class="tile is-parent is-vertical">
-                <div class="tile is-child notification box">
-                  <p>"Composing is improvisation slowed down."</p>
-                  <p class="is-italic mt-5">Wayne Shorter</p>
-                </div>
-                <div class="tile is-child notification box">
-                  <p>"You'll have bad times, but that'll always wake you up to the good stuff you weren't paying attention to."</p>
-                  <p class="is-italic mt-5">Robin Williams, Good Will Hunting</p>
-                </div>
-              </div>
-              <div class="tile is-parent is-vertical">
-                <div class="tile is-child notification box">
-                  <p>"The most exciting rhythms seem unexpected and complex, the most beautiful melodies simple and inevitable."</p>
-                  <p class="is-italic mt-5">W. H. Auden</p>
-                </div>
-                <div class="tile is-child notification box">
-                  <p>"Mrs. Dalloway said she would buy the flowers herself."</p>
-                  <p class="is-italic mt-5">Virginia Woolf, Mrs. Dalloway</p>
-                </div>
-              </div>
-            </div>
-            <div class="tile">
-              <div class="tile is-parent">
-                <div class="tile is-child notification box">
-                  <p>
-                    "I remember once going to see him when he was ill at Putney. I had ridden in taxi cab number 1729 and remarked that the number seemed to me rather a dull one, and that I hoped it was not an unfavourable omen. 'No,' he replied, 'it is a very interesting number; it is the smallest number expressible as the sum of two cubes in two different ways.'"<br><br>
-                    1729 = 1<sup>3</sup> + 12<sup>3</sup> = 9<sup>3</sup> + 10<sup>3</sup>
-                  </p>
-                  <p class="is-italic mt-5">G.H. Hardy recalls a moment with Ramanujan</p>
-                </div>
-              </div>
-              <div class="tile is-parent">
-                <a class="tile is-child notification box" href="https://www.youtube.com/watch?v=1cG-lPEhm2o">
-                  <div class="content">
-                    <div class="level mb-0">
-                      <div class="level-left">
-                        <div class="level-item">
-                          <h1 class="title">Small YouTube Culture</h1>
-                        </div>
-                      </div>
-                      <div class="level-right">
-                        <div class="level-item">
-                          <span class="icon is-large">
-                            <ion-icon name="logo-youtube"></ion-icon>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <h4 class="subtitle has-text-weight-normal">Big Joel</h4>
-                    <p>An investigation into one person's struggle with achievement despite "doing everything right" - a perspective on the success and failures of others and ourselves, and how we interact with criticism</p>
-                  </div>
-                </a>
-              </div>
+        <div class="grid">
+          <div class="grid-item">
+            <div class="notification box">
+              <p>"Composing is improvisation slowed down."</p>
+              <p class="is-italic mt-5">Wayne Shorter</p>
             </div>
           </div>
-          <div class="tile is-parent">
-            <div class="tile is-child notification box">
+          <div class="grid-item">
+            <div class="notification box">
+              <p>"You'll have bad times, but that'll always wake you up to the good stuff you weren't paying attention to."</p>
+              <p class="is-italic mt-5">Robin Williams, Good Will Hunting</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="notification box">
+              <p>"The most exciting rhythms seem unexpected and complex, the most beautiful melodies simple and inevitable."</p>
+              <p class="is-italic mt-5">W. H. Auden</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="notification box">
+              <p>"Mrs. Dalloway said she would buy the flowers herself."</p>
+              <p class="is-italic mt-5">Virginia Woolf, Mrs. Dalloway</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="notification box">
+              <p>
+                "I remember once going to see him when he was ill at Putney. I had ridden in taxi cab number 1729 and remarked that the number seemed to me rather a dull one, and that I hoped it was not an unfavourable omen. 'No,' he replied, 'it is a very interesting number; it is the smallest number expressible as the sum of two cubes in two different ways.'"<br><br>
+                1729 = 1<sup>3</sup> + 12<sup>3</sup> = 9<sup>3</sup> + 10<sup>3</sup>
+              </p>
+              <p class="is-italic mt-5">G.H. Hardy recalls a moment with Ramanujan</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <a class="notification box" href="https://www.youtube.com/watch?v=1cG-lPEhm2o">
+              <div class="content">
+                <div class="level mb-0">
+                  <div class="level-left">
+                    <div class="level-item">
+                      <h1 class="title">Small YouTube Culture</h1>
+                    </div>
+                  </div>
+                  <div class="level-right">
+                    <div class="level-item">
+                      <span class="icon is-large">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="subtitle has-text-weight-normal">Big Joel</h4>
+                <p>An investigation into one person's struggle with achievement despite "doing everything right" - a perspective on the success and failures of others and ourselves, and how we interact with criticism</p>
+              </div>
+            </a>
+          </div>
+          <div class="grid-item">
+            <div class="notification box">
               <div class="content">
                 <h1 class="title">One Art</h1>
                 <h4 class="subtitle has-text-weight-normal">Elizabeth Bishop</h4>
@@ -131,30 +131,24 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical">
-            <div class="tile is-parent is-12">
-              <div class="tile is-child notification box">
-                <h1 class="title">The Astronomer</h1>
-                <h4 class="subtitle has-text-weight-normal">Johannes Vermeer</h4>
-                <img src="media/Johannes_Vermeer_-_The_Astronomer_-_1668.jpg" alt="">
-              </div>
+          <div class="grid-item">
+            <div class="notification box">
+              <h1 class="title">The Astronomer</h1>
+              <h4 class="subtitle has-text-weight-normal">Johannes Vermeer</h4>
+              <img src="media/Johannes_Vermeer_-_The_Astronomer_-_1668.jpg" alt="">
             </div>
           </div>
-          <div class="tile is-vertical">
-            <div class="tile is-parent is-12">
-              <div class="tile is-child notification box">
-                <p>"When all of those records came out, I didn't know that they would be thought of as Classics or ABCs of modern jazz. Most of those tunes came out just like that - real quick...and if
-                  anything was behind them it was like a
-                  wish that was manifested musically... maybe
-                  a wish for eternity, or a beautiful girl."</p>
-                <p class="is-italic mt-5">Wayne Shorter, on the impact and longevity of his music</p>
-              </div>
+          <div class="grid-item">
+            <div class="notification box">
+              <p>"When all of those records came out, I didn't know that they would be thought of as Classics or ABCs of modern jazz. Most of those tunes came out just like that - real quick...and if
+                anything was behind them it was like a
+                wish that was manifested musically... maybe
+                a wish for eternity, or a beautiful girl."</p>
+              <p class="is-italic mt-5">Wayne Shorter, on the impact and longevity of his music</p>
             </div>
           </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child notification box">
+          <div class="grid-item">
+            <div class="notification box">
               <p class="title">Katherine Needleman on specifications</p>
               <div class="content">
                 <img src="media/245587898_4243356655763445_1372039633099082731_n.jpg" width="400px">
@@ -178,29 +172,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Hello World</p>
-              <p class="subtitle">What is up?</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Foo</p>
-              <p class="subtitle">Bar</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Third column</p>
-              <p class="subtitle">With some content</p>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-              </div>
-            </article>
-          </div>
-        </div> -->
       </div>
     </section>
 
