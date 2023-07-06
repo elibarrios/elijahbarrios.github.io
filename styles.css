@@ -57,6 +57,7 @@
     }
 }
 
+<<<<<<< HEAD
 .grid-sizer,
 .grid-item {
     width: 27%;
@@ -88,3 +89,11 @@
     height: 900px;
 }
 
+=======
+.grid-item {
+    width: 25%;
+}
+.grid-item--width2 {
+    width: 50%;
+}
+>>>>>>> 134836557896b85db5a6efccf82f4cec9fb7e0a6
