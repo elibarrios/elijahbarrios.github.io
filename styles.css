@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Inter:wght@100;300&display=swap');
 
-.content,.tile {
+/* .content,.grid-item {
     font-family: 'Frank Ruhl Libre', serif;
     animation: 1s ease 0s 1 fadeIn;
-}
+} */
 
 .img {
     animation: 1s ease 0s 1 fadeIn;
@@ -24,13 +24,126 @@
     opacity: 100%;
 }
 
-.grid-item {
-    transition: all .2s ease-in-out;
-    background-color: #f0f0f0;
+#adages {
+    color: #8F8CE7;
 }
 
-.grid-item:hover {
-    background-color: #e7e7e7;
+#adages:hover {
+    color: #6564c8;
+}
+
+#lessons {
+    color: rgb(255, 140, 0)
+}
+
+#lessons:hover {
+    color: rgb(195, 116, 20)
+}
+
+#aphorisms {
+    color: #ff9b99;
+}
+
+#aphorisms:hover {
+    color: #f97673;
+}
+
+#epigrams {
+    color: #5D21D0;
+}
+
+#epigrams:hover {
+    color: #4302ba;
+}
+
+#etc {
+    color: #7BC8F6;
+}
+
+#etc:hover {
+    color: #42b4f6;
+}
+
+
+.garden-button {
+    transition: all .2s ease-in;
+}
+
+.garden-button:hover {
+    transition: all .2s ease-in;
+    background-color: #6eff908b;
+}
+
+.gutter-sizer {
+    width: 3%;
+}
+
+.quote {
+    background-color: hsla(217, 71%, 53%, 0.293);
+}
+
+.quote:hover {
+    background-color: hsla(217, 71%, 53%, 0.367);
+}
+
+.poem {
+    background-color: hsla(48, 100%, 67%, 0.323) 
+}
+
+.poem:hover {
+    background-color: hsla(48, 100%, 67%, 0.532) 
+}
+
+.parable {
+    background-color: hsla(348, 100%, 61%, 0.379)
+}
+
+.parable:hover {
+    background-color: hsla(348, 100%, 61%, 0.516)
+}
+
+.etc {
+    background-color: #7bc9f654;
+}
+
+.etc:hover {
+    background-color: #7bc9f67a;
+}
+
+.art {
+    background-color: hsla(171, 100%, 41%, 0.249);
+}
+
+.grid-sizer,
+.grid-item {
+    width: 22%;
+    transition: all .2s ease-in-out;
+    
+}
+
+.grid-item--width2 {
+    width: 50%;
+}
+
+
+.cover .pic-cover {
+    border-radius: 4px;
+    transition: all .15s cubic-bezier(.4,0,.2,1);
+}
+
+.text-cover {
+    transition: .15s;
+    opacity: 0%;
+}
+
+.cover:hover .text-cover {
+    transition: .15s;
+    opacity: 100%;
+}
+
+.cover:hover .pic-cover {
+    transform: translateY(6rem);
+    transition: all .15s cubic-bezier(.4,0,.2,1);
 }
 
 @keyframes fallDown {
@@ -55,36 +168,5 @@
     .buttons a {
         font-size: 12px;
     }
-}
-
-.grid-sizer,
-.grid-item {
-    width: 20%;
-    /* height: 150px; */
-}
-
-.grid-item--large {
-    width: 50%;
-    height: 450px;
-}
-
-.grid-item--width-2 { 
-    width: 40%; 
-}
-
-.grid-item--height-2 {
-    height: 350px;
-}
-.grid-item--height-3 {
-    height: 450px;
-}
-.grid-item--height-4 {
-    height: 600px;
-}
-.grid-item--height-5 {
-    height: 750px;
-}
-.grid-item--height-6 {
-    height: 900px;
 }
 
