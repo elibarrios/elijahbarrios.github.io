@@ -14,22 +14,26 @@
 }
 
 .nav {
-    animation: 1s ease 0s 1 fallDown;
-    border: 1px solid grey;
-    border-radius: 15px;
-    box-shadow: 0 10px 10px -5px rgba(0,0,0,.1);
+    animation: 1s ease 0s 1 fadeIn;
+    border-bottom: 1px solid black;
+    background-color: white;
 }
 
-.navbuttons a {
+.navbutton {
+    font-size: 40px;
     text-decoration: none;
-    border-radius: 230px;
+    color: inherit;
     font-family: 'Inter', sans-serif;
-}
-
-.navbuttons a:hover {
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .2s;
-    opacity: 100%;
+    padding-right: 15px; 
+    padding-left: 15px; 
+}
+
+.navbutton:hover {
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+    background-color: rgba(182, 180, 180, 0.611);
 }
 
 #adages {
