@@ -2,19 +2,19 @@
 
 .content,.grid-item {
     font-family: 'Playfair Display', serif;
-    animation: 1s ease 0s 1 fadeIn;
+    animation: 400ms ease 0s 1 fadeIn;
 }
 
 #body {
     font-size: 40px;
 }
 
-.img {
-    animation: 1s ease 0s 1 fadeIn;
+img {
+    animation: 400ms ease 0s 1 fadeIn;
 }
 
 .nav {
-    animation: 1s ease 0s 1 fadeIn;
+    animation: 400ms ease 0s 1 fadeIn;
     border-bottom: 1px solid black;
     background-color: white;
 }
@@ -90,7 +90,7 @@
 }
 
 .contact {
-    animation: 1s ease 0s 1 fadeIn;
+    animation: 400ms ease 0s 1 fadeIn;
 }
 
 .contact .buttons .button {
@@ -180,6 +180,10 @@
 .cover:hover .pic-cover {
     transform: translateY(6rem);
     transition: all .15s cubic-bezier(.4,0,.2,1);
+}
+
+.grid>.row {
+    border-bottom: 1px solid black;
 }
 
 @keyframes fallDown {
