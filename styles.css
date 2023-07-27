@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Inter:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-/* .content,.grid-item {
-    font-family: 'Frank Ruhl Libre', serif;
+.content,.grid-item {
+    font-family: 'Playfair Display', serif;
     animation: 1s ease 0s 1 fadeIn;
-} */
+}
+
+#body {
+    font-size: 40px;
+}
 
 .img {
     animation: 1s ease 0s 1 fadeIn;
@@ -11,14 +15,18 @@
 
 .nav {
     animation: 1s ease 0s 1 fallDown;
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,.1);
 }
 
-.buttons a {
-    opacity: 70%;
+.navbuttons a {
+    text-decoration: none;
+    border-radius: 230px;
     font-family: 'Inter', sans-serif;
 }
 
-.buttons a:hover {
+.navbuttons a:hover {
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .2s;
     opacity: 100%;
