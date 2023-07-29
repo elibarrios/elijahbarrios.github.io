@@ -183,6 +183,14 @@ img {
 }
 
 .grid>.row {
+    transition: transform .2s;
+}
+
+.grid>.row:hover {
+    transform: scale(1.05);
+}
+
+.grid>.row {
     border-bottom: 1px solid black;
 }
 
