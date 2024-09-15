@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .content,.grid-item {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Noto Sans', sans-serif;
     animation: 400ms ease 0s 1 fadeIn;
 }
 
